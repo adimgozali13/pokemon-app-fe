@@ -165,7 +165,7 @@ const PokeDex = () => {
       </div>
       <div className="container mt-4">
         <div className="row">
-          <div className="col-4">
+          <div className="col-6 col-sm-4 mt-2">
             <div className="select-card d-flex">
               <img src={iconType} className="icon-filter" alt="" />
               <Select
@@ -177,7 +177,7 @@ const PokeDex = () => {
               />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-6 col-sm-4 mt-2">
             <div className="select-card d-flex">
               <img src={iconAbility} className="icon-filter" alt="" />
               <Select
@@ -189,7 +189,7 @@ const PokeDex = () => {
               />
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-6 col-sm-2 mt-2">
             <div className="select-card d-flex">
               <button
                 onClick={handlePrev}
@@ -203,7 +203,7 @@ const PokeDex = () => {
               </button>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-6 col-sm-2 mt-2">
             <div className="select-card d-flex">
               <button
                 type="button"
@@ -229,11 +229,10 @@ const PokeDex = () => {
       </div>
       <div className="container pokemon-list mb-5">
         <div className="row">
-        {console.log("ini harusnya data : ",data)}
           {data.length > 0 ? (
             loading === false ? (
               data.map((item, index) => (
-                <div className="col-3">
+                <div className="col-6 col-sm-3">
                   <Link to={`detail/${item.name}`} style={{ textDecoration: 'none' }}>
                     <div className="card-item-pokemon">
                       <img src={item.image} alt="" />

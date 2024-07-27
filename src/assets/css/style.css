@@ -279,7 +279,7 @@ body {
   0% {
     height: 50vh;
   }
-  100%{
+  100% {
     height: 0;
   }
 }
@@ -291,23 +291,34 @@ body {
     width: 200px;
   }
 }
-.nickname-page{
+.nickname-page {
   width: 100%;
   height: 100vh;
   position: fixed !important;
   top: 0 !important;
   z-index: 99;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   place-items: center;
 }
-.card-rename{
+.card-rename {
   width: 500px;
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
 
-.title-page{
+.title-page {
   font-family: "SF Bold";
+}
+
+@media screen and (max-width: 720px) {
+  .ctn-right {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    height: 490px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
 }

@@ -45,7 +45,7 @@ const PokeDex = () => {
           {data.length > 0 ? (
             loading === false ? (
               data.map((item, index) => (
-                <div className="col-3">
+                <div className="col-6 col-sm-3">
                   <Link
                     to={`/detail/${item.name}`}
                     style={{ textDecoration: "none" }}
